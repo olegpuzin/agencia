@@ -1,0 +1,13 @@
+@mixin fontFamily($family, $style, $size, $weight, $color) {
+    font-family: $family;
+    font-style: $style;
+    font-size: $size;
+	font-weight: $weight; 
+    color: $color;
+}
+@mixin widthMedia($range, $width) {
+    @media screen and (#{$range}-width: $width) {
+    @content;
+    }
+    
+}
