@@ -46,17 +46,16 @@ header {
         }
     }
     .header_nav.open_nav {
-        right: 20px;
+        top: 35px;
     }
     .header_nav {
         @include widthMedia(max, 480px) {
             display: block;
             position: absolute;
-            top: 35px;
+            top: -300%;
             right: 20px;
             text-align: right;
             box-shadow: 0 4px 2px -2px white;
-            right: -100%;
             transition: all 0.4s ease;
         }
         .menu_box {
