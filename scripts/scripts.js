@@ -10,5 +10,10 @@ $(document).ready(function(){
             $('.youtube-mobile').css('display', 'block');
         });
     }
-    
+    $(document).ready(function() {
+        $('.burger').click(function() {
+            $('.burger').toggleClass('open-menu');
+            $('.header_nav').toggleClass('open_nav');
+        });
+    });
 });
