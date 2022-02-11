@@ -527,7 +527,7 @@ header .burger.open-menu span::after {
   .section-slogan .text-slogan {
     font-family: "Lato";
     font-style: normal;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #979797;
   }
@@ -573,7 +573,7 @@ header .burger.open-menu span::after {
   .section-feedback .text-rewiew {
     font-family: "Lato";
     font-style: normal;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: white;
     padding-top: 90px;
@@ -606,6 +606,16 @@ header .burger.open-menu span::after {
   font-weight: 400;
   color: white;
   padding: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .section-feedback .username {
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1408,6 +1418,7 @@ header .burger.open-menu span::after {
 }
 
 footer {
+  max-width: 100vw;
   width: 100%;
   height: 115px;
   display: -webkit-box;
@@ -1504,7 +1515,7 @@ footer nav ul a {
   footer nav ul a {
     font-family: "Lato";
     font-style: normal;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     color: white;
   }
@@ -1514,7 +1525,7 @@ footer nav ul a {
   footer nav ul a {
     font-family: "Lato";
     font-style: normal;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     color: white;
   }
@@ -1554,6 +1565,12 @@ footer .messengers ul a {
 @media screen and (max-width: 600px) {
   footer .messengers ul a {
     margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer .messengers ul a {
+    margin-left: 5px;
   }
 }
 

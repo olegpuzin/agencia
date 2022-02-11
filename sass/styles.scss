@@ -287,7 +287,7 @@ header {
         margin-bottom: 150px;
 
         @include widthMedia(max, 480px) {
-            @include fontFamily('Lato', normal, 14px, 400, #979797);
+            @include fontFamily('Lato', normal, 12px, 400, #979797);
             // margin-bottom: 80px;
         }
         @include widthMedia(max, 375px) {
@@ -315,7 +315,7 @@ header {
         padding-top: 112px;
 
         @include widthMedia(max, 480px) {
-            @include fontFamily('Lato', normal, 14px, 400, white);
+            @include fontFamily('Lato', normal, 12px, 400, white);
             padding-top: 90px;
         }
         @include widthMedia(max, 375px) {
@@ -333,6 +333,9 @@ header {
         @include fontFamily('Lato', normal, 20px, 400, white);
         padding: 30px;
 
+        @include widthMedia(max, 480px) {
+            @include fontFamily('Lato', normal, 14px, 400, white);
+        }
         @include widthMedia(max, 375px) {
             @include fontFamily('Lato', normal, 12px, 400, white);
         }
@@ -844,6 +847,7 @@ header {
     }
 }
 footer {
+    max-width: 100vw;
     width: 100%;
     height: 115px;
     display: flex;
@@ -895,10 +899,10 @@ footer {
                 margin-right: 10px;
             }
             @include widthMedia(max, 480px) {
-                @include fontFamily('Lato', normal, 16px, 700, white);
+                @include fontFamily('Lato', normal, 12px, 700, white);
             }
             @include widthMedia(max, 375px) {
-                @include fontFamily('Lato', normal, 14px, 700, white);
+                @include fontFamily('Lato', normal, 12px, 700, white);
             }
             &:link {
                 color: white;
@@ -920,11 +924,15 @@ footer {
 
         a {
             margin-left: 40px;
+
             @include widthMedia(max, 768px) {
                 margin-left: 20px;
             }
             @include widthMedia(max, 600px) {
                 margin-left: 10px;
+            }
+            @include widthMedia(max, 480px) {
+                margin-left: 5px;
             }
             .path {
                 &:link {
