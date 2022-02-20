@@ -116,7 +116,7 @@ header {
 }
 
 @media screen and (max-width: 480px) {
-  header .logo a img {
+  header .header_logo_link img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -126,7 +126,7 @@ header {
 }
 
 @media screen and (max-width: 375px) {
-  header .logo a img {
+  header .header_logo_link img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -153,7 +153,7 @@ header .header_nav.open_nav {
   }
 }
 
-header .header_nav .menu_box {
+header .header_nav .header_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,30 +163,30 @@ header .header_nav .menu_box {
 }
 
 @media screen and (max-width: 480px) {
-  header .header_nav .menu_box {
+  header .header_nav .header_menu {
     display: block;
     padding-top: 10px;
   }
 }
 
-header .header_nav .menu_box li {
+header .header_nav .header_menu li {
   margin-left: 40px;
 }
 
 @media screen and (max-width: 768px) {
-  header .header_nav .menu_box li {
+  header .header_nav .header_menu li {
     margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  header .header_nav .menu_box li {
+  header .header_nav .header_menu li {
     margin: 30px 0 30px 10px;
     font-size: 16px;
   }
 }
 
-header .header_nav .menu_box li a {
+header .header_nav .header_menu li .header_menu_item {
   font-family: "Lato";
   font-style: normal;
   font-size: 22px;
@@ -196,7 +196,7 @@ header .header_nav .menu_box li a {
 }
 
 @media screen and (max-width: 600px) {
-  header .header_nav .menu_box li a {
+  header .header_nav .header_menu li .header_menu_item {
     font-family: "Lato";
     font-style: normal;
     font-size: 18px;
@@ -206,7 +206,7 @@ header .header_nav .menu_box li a {
 }
 
 @media screen and (max-width: 480px) {
-  header .header_nav .menu_box li a {
+  header .header_nav .header_menu li .header_menu_item {
     font-family: "Lato";
     font-style: normal;
     font-size: 14px;
@@ -216,7 +216,7 @@ header .header_nav .menu_box li a {
 }
 
 @media screen and (max-width: 375px) {
-  header .header_nav .menu_box li a {
+  header .header_nav .header_menu li .header_menu_item {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -225,24 +225,24 @@ header .header_nav .menu_box li a {
   }
 }
 
-header .header_nav .menu_box li a:link {
+header .header_nav .header_menu li .header_menu_item:link {
   color: white;
 }
 
-header .header_nav .menu_box li a:hover {
+header .header_nav .header_menu li .header_menu_item:hover {
   color: #b3b3b3;
 }
 
-header .header_nav .menu_box li a:active {
+header .header_nav .header_menu li .header_menu_item:active {
   color: #666666;
 }
 
-header .burger {
+header .header_burger {
   display: none;
 }
 
 @media screen and (max-width: 480px) {
-  header .burger {
+  header .header_burger {
     display: block;
     width: 35px;
     height: 28px;
@@ -256,7 +256,7 @@ header .burger {
   }
 }
 
-header .burger span {
+header .header_burger span {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -269,7 +269,7 @@ header .burger span {
   transition: 0.4s;
 }
 
-header .burger span::before {
+header .header_burger span::before {
   content: "";
   position: absolute;
   left: 0;
@@ -281,7 +281,7 @@ header .burger span::before {
   transition: 0.4s;
 }
 
-header .burger span::after {
+header .header_burger span::after {
   content: "";
   position: absolute;
   left: 0;
@@ -293,13 +293,13 @@ header .burger span::after {
   transition: 0.4s;
 }
 
-header .burger.open-menu span {
+header .header_burger.open-menu span {
   background-color: transparent;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-header .burger.open-menu span::before {
+header .header_burger.open-menu span::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transition: 0.4s;
@@ -307,7 +307,7 @@ header .burger.open-menu span::before {
   top: 0;
 }
 
-header .burger.open-menu span::after {
+header .header_burger.open-menu span::after {
   content: "";
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -316,13 +316,13 @@ header .burger.open-menu span::after {
   transition: 0.4s;
 }
 
-.section-coding {
+.coding {
   padding: 290px 115px 200px 115px;
   background: black url(../images/agencia_fon.jpg) no-repeat center top/100% 100%;
 }
 
 @media screen and (max-width: 1024px) {
-  .section-coding {
+  .coding {
     max-width: 1024px;
     width: 100%;
     padding: 240px 115px 200px 115px;
@@ -330,7 +330,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 960px) {
-  .section-coding {
+  .coding {
     max-width: 960px;
     width: 100%;
     padding: 200px 115px 200px 115px;
@@ -338,7 +338,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 768px) {
-  .section-coding {
+  .coding {
     max-width: 768px;
     width: 100%;
     display: -webkit-box;
@@ -358,7 +358,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 600px) {
-  .section-coding {
+  .coding {
     max-width: 600px;
     width: 100%;
     padding: 160px 115px 75px 80px;
@@ -366,7 +366,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-coding {
+  .coding {
     max-width: 480px;
     width: 100%;
     padding: 100px 115px 75px 20px;
@@ -374,21 +374,21 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-coding {
+  .coding {
     max-width: 375px;
     width: 100%;
     padding: 90px 115px 75px 20px;
   }
 }
 
-.section-coding .line-coding {
+.coding .coding_line {
   display: block;
   width: 72px;
   height: 4px;
   background-color: #3ec6ff;
 }
 
-.section-coding .title {
+.coding .coding_title {
   font-family: "Lato";
   font-style: normal;
   font-size: 80px;
@@ -400,7 +400,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 768px) {
-  .section-coding .title {
+  .coding .coding_title {
     font-family: "Lato";
     font-style: normal;
     font-size: 50px;
@@ -410,7 +410,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-coding .title {
+  .coding .coding_title {
     font-family: "Lato";
     font-style: normal;
     font-size: 40px;
@@ -421,7 +421,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-coding .title {
+  .coding .coding_title {
     font-family: "Lato";
     font-style: normal;
     font-size: 30px;
@@ -432,7 +432,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-coding p {
+.coding p {
   font-family: "Lato";
   font-style: normal;
   font-size: 18px;
@@ -441,7 +441,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-coding p {
+  .coding p {
     font-family: "Lato";
     font-style: normal;
     font-size: 14px;
@@ -450,7 +450,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-coding .btn-study {
+.coding .coding_btn-study {
   width: 100%;
   width: 172px;
   height: 46px;
@@ -465,23 +465,23 @@ header .burger.open-menu span::after {
   margin-top: 40px;
 }
 
-.section-coding .btn-study:hover {
+.coding .coding_btn-study:hover {
   background-color: gray;
   cursor: pointer;
 }
 
-.section-coding .btn-study:active {
+.coding .coding_btn-study:active {
   -webkit-box-shadow: 0 0 10px 0 white;
           box-shadow: 0 0 10px 0 white;
   cursor: pointer;
 }
 
-.section-slogan {
+.slogan {
   width: 100%;
   text-align: center;
 }
 
-.section-slogan .subtitle-slogan {
+.slogan .slogan_subtitle {
   font-family: "Lato";
   font-style: normal;
   font-size: 36px;
@@ -492,7 +492,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-slogan .subtitle-slogan {
+  .slogan .slogan_subtitle {
     font-family: "Lato";
     font-style: normal;
     font-size: 30px;
@@ -503,7 +503,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-slogan .subtitle-slogan {
+  .slogan .slogan_subtitle {
     font-family: "Lato";
     font-style: normal;
     font-size: 25px;
@@ -513,7 +513,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-slogan .text-slogan {
+.slogan .slogan_text {
   font-family: "Lato";
   font-style: normal;
   font-size: 22px;
@@ -524,7 +524,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-slogan .text-slogan {
+  .slogan .slogan_text {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -534,7 +534,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-slogan .text-slogan {
+  .slogan .slogan_text {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -544,7 +544,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-feedback {
+.feedback {
   width: 100%;
   padding: 20px 0;
   background: #6C330B url(../images/canyon.jpg) no-repeat center top/100% 100%;
@@ -552,7 +552,7 @@ header .burger.open-menu span::after {
   text-align: center;
 }
 
-.section-feedback .img-user {
+.feedback .feedback_img-user {
   position: absolute;
   left: 0;
   right: 0;
@@ -560,7 +560,7 @@ header .burger.open-menu span::after {
   margin: -57px auto;
 }
 
-.section-feedback .text-rewiew {
+.feedback .feedback_text-rewiew {
   font-family: "Lato";
   font-style: normal;
   font-size: 20px;
@@ -570,7 +570,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-feedback .text-rewiew {
+  .feedback .feedback_text-rewiew {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -581,7 +581,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-feedback .text-rewiew {
+  .feedback .feedback_text-rewiew {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -591,15 +591,15 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-feedback .text-rewiew::before {
+.feedback .feedback_text-rewiew::before {
   content: "\201C";
 }
 
-.section-feedback .text-rewiew::after {
+.feedback .feedback_text-rewiew::after {
   content: "\201D";
 }
 
-.section-feedback .username {
+.feedback .feedback_username {
   font-family: "Lato";
   font-style: normal;
   font-size: 20px;
@@ -609,7 +609,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-feedback .username {
+  .feedback .feedback_username {
     font-family: "Lato";
     font-style: normal;
     font-size: 14px;
@@ -619,7 +619,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-feedback .username {
+  .feedback .feedback_username {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -628,7 +628,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-video {
+.video {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,7 +644,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1200px) {
-  .section-video {
+  .video {
     max-width: 1200px;
     width: 100%;
     padding: 0;
@@ -656,7 +656,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 600px) {
-  .section-video {
+  .video {
     max-width: 600px;
     width: 100%;
     margin: 50px 0;
@@ -664,7 +664,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1200px) {
-  .section-video .box-subtitle {
+  .video .video_info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -676,7 +676,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 768px) {
-  .section-video .box-subtitle {
+  .video .video_info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -687,14 +687,14 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-video .box-subtitle .line-video {
+.video .video_info .video_info_line {
   display: block;
   width: 72px;
   height: 4px;
   background-color: #3ec6ff;
 }
 
-.section-video .box-subtitle .subtitle-video {
+.video .video_info .video_info_subtitle {
   font-family: "Lato";
   font-style: normal;
   font-size: 36px;
@@ -705,19 +705,19 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1200px) {
-  .section-video .box-subtitle .subtitle-video {
+  .video .video_info .video_info_subtitle {
     margin: 0 0;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .section-video .box-subtitle .subtitle-video {
+  .video .video_info .video_info_subtitle {
     margin: 20px 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .section-video .box-subtitle .subtitle-video {
+  .video .video_info .video_info_subtitle {
     font-family: "Lato";
     font-style: normal;
     font-size: 30px;
@@ -728,7 +728,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-video .box-subtitle .subtitle-video {
+  .video .video_info .video_info_subtitle {
     font-family: "Lato";
     font-style: normal;
     font-size: 25px;
@@ -738,7 +738,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-video .box-subtitle .text-video {
+.video .video_info .video_info_text {
   font-family: "Lato";
   font-style: normal;
   font-size: 14px;
@@ -746,7 +746,7 @@ header .burger.open-menu span::after {
   color: #979797;
 }
 
-.section-video .box-video {
+.video .video_play {
   max-width: 672px;
   width: 100%;
   height: 0;
@@ -756,7 +756,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 768px) {
-  .section-video .box-video {
+  .video .video_play {
     max-width: 310px;
     width: 100%;
     padding: 100px;
@@ -765,7 +765,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-video .box-video .icon-play {
+.video .video_play .video_play_icon {
   max-width: 54px;
   width: 100%;
   height: 54px;
@@ -781,15 +781,15 @@ header .burger.open-menu span::after {
   margin: auto;
 }
 
-.section-video .box-video .icon-play:hover {
+.video .video_play .video_play_icon:hover {
   opacity: 0.8;
 }
 
-.section-video .box-video .icon-play:active {
+.video .video_play .video_play_icon:active {
   opacity: 0.2;
 }
 
-.section-video .box-video .youtube-laptop {
+.video .video_play .video_play_youtube-laptop {
   display: none;
   width: 100%;
   height: 100%;
@@ -801,7 +801,7 @@ header .burger.open-menu span::after {
   margin: auto;
 }
 
-.section-video .box-video .youtube-mobile {
+.video .video_play .video_play_youtube-mobile {
   display: none;
   width: 100%;
   height: 100%;
@@ -813,13 +813,13 @@ header .burger.open-menu span::after {
   margin: auto;
 }
 
-.section-team {
+.team {
   width: 100%;
   padding: 0 115px;
 }
 
 @media screen and (max-width: 1400px) {
-  .section-team {
+  .team {
     max-width: 1400px;
     width: 100%;
     padding: 0 50px;
@@ -827,7 +827,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1300px) {
-  .section-team {
+  .team {
     max-width: 1300px;
     width: 100%;
     padding: 0 30px;
@@ -835,7 +835,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1200px) {
-  .section-team {
+  .team {
     max-width: 1200px;
     width: 100%;
     padding: 0 200px;
@@ -843,7 +843,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1024px) {
-  .section-team {
+  .team {
     max-width: 1024px;
     width: 100%;
     padding: 0 150px;
@@ -851,7 +851,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 960px) {
-  .section-team {
+  .team {
     max-width: 960px;
     width: 100%;
     padding: 0 100px;
@@ -859,7 +859,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 800px) {
-  .section-team {
+  .team {
     max-width: 800px;
     width: 100%;
     padding: 0 80px;
@@ -867,18 +867,18 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 600px) {
-  .section-team {
+  .team {
     max-width: 600px;
     width: 100%;
     padding: 0;
   }
 }
 
-.section-team .description-team {
+.team .team_description {
   text-align: center;
 }
 
-.section-team .description-team .subtitle-team {
+.team .team_description .team_description_subtitle {
   font-family: "Lato";
   font-style: normal;
   font-size: 36px;
@@ -890,7 +890,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-team .description-team .subtitle-team {
+  .team .team_description .team_description_subtitle {
     font-family: "Lato";
     font-style: normal;
     font-size: 30px;
@@ -900,7 +900,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-team .description-team .subtitle-team {
+  .team .team_description .team_description_subtitle {
     font-family: "Lato";
     font-style: normal;
     font-size: 25px;
@@ -910,7 +910,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-team .description-team .text-team {
+  .team .team_description .team_description_text {
     font-family: "Lato";
     font-style: normal;
     font-size: 14px;
@@ -920,7 +920,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-team .description-team .text-team {
+  .team .team_description .team_description_text {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -929,7 +929,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-team .gallery-team {
+.team .team_gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -940,14 +940,14 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1200px) {
-  .section-team .gallery-team {
+  .team .team_gallery {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .section-team .gallery-team {
+  .team .team_gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -961,24 +961,24 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-team .gallery-team .employee {
+.team .team_gallery .employee {
   max-width: 272px;
   width: 100%;
   max-height: 336px;
   height: 100%;
 }
 
-.section-team .gallery-team .employee:hover {
+.team .team_gallery .employee:hover {
   -webkit-box-shadow: 0 0 10px 0 #c9c9c9;
           box-shadow: 0 0 10px 0 #c9c9c9;
 }
 
-.section-team .gallery-team .employee:active {
+.team .team_gallery .employee:active {
   -webkit-box-shadow: 0 0 10px 0 black;
           box-shadow: 0 0 10px 0 black;
 }
 
-.section-team .gallery-team .employee a .text-name {
+.team .team_gallery .employee a .text-name {
   width: 100%;
   height: 74px;
   display: -webkit-box;
@@ -1002,7 +1002,7 @@ header .burger.open-menu span::after {
   text-align: center;
 }
 
-.section-location {
+.location {
   width: 100%;
   height: 0;
   padding-bottom: 37%;
@@ -1011,7 +1011,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 960px) {
-  .section-location {
+  .location {
     max-width: 960px;
     width: 100%;
     margin-top: 100px;
@@ -1019,7 +1019,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 768px) {
-  .section-location {
+  .location {
     max-width: 768px;
     width: 100%;
     margin-top: 50px;
@@ -1027,14 +1027,14 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 600px) {
-  .section-location {
+  .location {
     max-width: 600px;
     width: 100%;
     margin-top: 10px;
   }
 }
 
-.section-location .img-map {
+.location .location_img-map {
   position: absolute;
   top: 0;
   left: 0;
@@ -1044,7 +1044,7 @@ header .burger.open-menu span::after {
      object-fit: cover;
 }
 
-.section-location .pointer {
+.location .location_pointer {
   max-width: 20px;
   width: 100%;
   max-height: 20px;
@@ -1063,37 +1063,37 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1300px) {
-  .section-location .pointer {
+  .location .location_pointer {
     bottom: 15%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .section-location .pointer {
+  .location .location_pointer {
     bottom: 18%;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .section-location .pointer {
+  .location .location_pointer {
     bottom: 23%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .section-location .pointer {
+  .location .location_pointer {
     bottom: 26%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .section-location .pointer {
+  .location .location_pointer {
     bottom: 34%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .section-location .pointer {
+  .location .location_pointer {
     max-width: 10px;
     width: 100%;
     max-height: 10px;
@@ -1103,7 +1103,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-location .pointer {
+  .location .location_pointer {
     max-width: 10px;
     width: 100%;
     max-height: 10px;
@@ -1112,7 +1112,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-location .box-address {
+.location .location_address {
   max-width: 225px;
   width: 100%;
   max-height: 46px;
@@ -1146,31 +1146,31 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 1024px) {
-  .section-location .box-address {
+  .location .location_address {
     bottom: 30%;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .section-location .box-address {
+  .location .location_address {
     bottom: 35%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .section-location .box-address {
+  .location .location_address {
     bottom: 42%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .section-location .box-address {
+  .location .location_address {
     bottom: 55%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .section-location .box-address {
+  .location .location_address {
     max-width: 100px;
     width: 100%;
     max-height: 25px;
@@ -1181,7 +1181,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-location .box-address {
+  .location .location_address {
     max-width: 100px;
     width: 100%;
     max-height: 25px;
@@ -1191,7 +1191,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-location .box-point {
+.location .location_point {
   max-width: 34px;
   width: 100%;
   max-height: 34px;
@@ -1209,7 +1209,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-location .box-point {
+  .location .location_point {
     max-width: 20px;
     width: 100%;
     max-height: 20px;
@@ -1218,7 +1218,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-location .box-point {
+  .location .location_point {
     max-width: 20px;
     width: 100%;
     max-height: 20px;
@@ -1226,7 +1226,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-location .box-dot {
+.location .location_dot {
   max-width: 20px;
   width: 100%;
   max-height: 20px;
@@ -1245,7 +1245,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-location .box-dot {
+  .location .location_dot {
     max-width: 12px;
     width: 100%;
     max-height: 12px;
@@ -1254,7 +1254,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-location .box-dot {
+  .location .location_dot {
     max-width: 12px;
     width: 100%;
     max-height: 12px;
@@ -1262,11 +1262,11 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-form {
+.form {
   text-align: center;
 }
 
-.section-form .subtitle-form {
+.form .form_subtitle {
   font-family: "Lato";
   font-style: normal;
   font-size: 36px;
@@ -1278,7 +1278,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 480px) {
-  .section-form .subtitle-form {
+  .form .form_subtitle {
     font-family: "Lato";
     font-style: normal;
     font-size: 30px;
@@ -1290,7 +1290,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 375px) {
-  .section-form .subtitle-form {
+  .form .form_subtitle {
     font-family: "Lato";
     font-style: normal;
     font-size: 25px;
@@ -1301,7 +1301,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-form .field1, .section-form .field2, .section-form .field3 {
+.form .field1, .form .field2, .form .field3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1311,7 +1311,7 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 600px) {
-  .section-form .field1, .section-form .field2, .section-form .field3 {
+  .form .field1, .form .field2, .form .field3 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1322,7 +1322,7 @@ header .burger.open-menu span::after {
   }
 }
 
-.section-form .field1 input, .section-form .field2 input, .section-form .field3 input {
+.form .field1 input, .form .field2 input, .form .field3 input {
   max-width: 253px;
   width: calc(100% - 20px);
   height: 46px;
@@ -1338,20 +1338,20 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 768px) {
-  .section-form .field1 input, .section-form .field2 input, .section-form .field3 input {
+  .form .field1 input, .form .field2 input, .form .field3 input {
     max-width: 200px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .section-form .field1 input, .section-form .field2 input, .section-form .field3 input {
+  .form .field1 input, .form .field2 input, .form .field3 input {
     max-width: 253px;
     width: 100%;
   }
 }
 
-.section-form .field3 textarea {
+.form .field3 textarea {
   resize: none;
   max-width: 562px;
   width: 100%;
@@ -1367,32 +1367,32 @@ header .burger.open-menu span::after {
 }
 
 @media screen and (max-width: 768px) {
-  .section-form .field3 textarea {
+  .form .field3 textarea {
     max-width: 450px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .section-form .field3 textarea {
+  .form .field3 textarea {
     max-width: 253px;
     width: 100%;
   }
 }
 
-.section-form .submit {
+.form .submit {
   margin-top: 50px;
   margin-bottom: 70px;
 }
 
 @media screen and (max-width: 375px) {
-  .section-form .submit {
+  .form .submit {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.section-form .submit button {
+.form .submit button {
   max-width: 228px;
   width: 100%;
   height: 46px;
@@ -1406,12 +1406,12 @@ header .burger.open-menu span::after {
   color: white;
 }
 
-.section-form .submit button:hover {
+.form .submit button:hover {
   background-color: #00a9f1;
   cursor: pointer;
 }
 
-.section-form .submit button:active {
+.form .submit button:active {
   -webkit-box-shadow: 0 0 10px 0 #026d9b;
           box-shadow: 0 0 10px 0 #026d9b;
   cursor: pointer;
@@ -1475,7 +1475,7 @@ footer {
   }
 }
 
-footer nav ul {
+footer .footer_nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,7 +1484,7 @@ footer nav ul {
           align-items: center;
 }
 
-footer nav ul a {
+footer .footer_nav ul .link {
   font-family: "Lato";
   font-style: normal;
   font-size: 22px;
@@ -1495,13 +1495,13 @@ footer nav ul a {
 }
 
 @media screen and (max-width: 768px) {
-  footer nav ul a {
+  footer .footer_nav ul .link {
     margin-right: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  footer nav ul a {
+  footer .footer_nav ul .link {
     font-family: "Lato";
     font-style: normal;
     font-size: 18px;
@@ -1512,7 +1512,7 @@ footer nav ul a {
 }
 
 @media screen and (max-width: 480px) {
-  footer nav ul a {
+  footer .footer_nav ul .link {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -1522,7 +1522,7 @@ footer nav ul a {
 }
 
 @media screen and (max-width: 375px) {
-  footer nav ul a {
+  footer .footer_nav ul .link {
     font-family: "Lato";
     font-style: normal;
     font-size: 12px;
@@ -1531,19 +1531,19 @@ footer nav ul a {
   }
 }
 
-footer nav ul a:link {
+footer .footer_nav ul .link:link {
   color: white;
 }
 
-footer nav ul a:hover {
+footer .footer_nav ul .link:hover {
   color: #b3b3b3;
 }
 
-footer nav ul a:active {
+footer .footer_nav ul .link:active {
   color: #666666;
 }
 
-footer .messengers ul {
+footer .footer_messengers ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1552,38 +1552,38 @@ footer .messengers ul {
           align-items: center;
 }
 
-footer .messengers ul a {
+footer .footer_messengers ul .link {
   margin-left: 40px;
 }
 
 @media screen and (max-width: 768px) {
-  footer .messengers ul a {
+  footer .footer_messengers ul .link {
     margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  footer .messengers ul a {
+  footer .footer_messengers ul .link {
     margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  footer .messengers ul a {
+  footer .footer_messengers ul .link {
     margin-left: 5px;
   }
 }
 
-footer .messengers ul a .path:link {
+footer .footer_messengers ul .link .icon:link {
   color: white;
 }
 
-footer .messengers ul a .path:hover {
+footer .footer_messengers ul .link .icon:hover {
   fill: #b3b3b3;
   cursor: pointer;
 }
 
-footer .messengers ul a .path:active {
+footer .footer_messengers ul .link .icon:active {
   fill: #666666;
   cursor: pointer;
 }

@@ -33,7 +33,7 @@ header {
         padding: 0 20px;
         height: 85px;
     }
-    .logo a img {
+    .header_logo_link img {
         @include widthMedia(max, 480px) {
             align-items: flex-start;
             width: 100px;
@@ -58,7 +58,7 @@ header {
             box-shadow: 0 4px 2px -2px white;
             transition: all 0.4s ease;
         }
-        .menu_box {
+        .header_menu {
             display: flex;
             align-items: center;
 
@@ -77,7 +77,7 @@ header {
                     margin: 30px 0 30px 10px;
                     font-size: 16px;
                 }
-                a {
+                .header_menu_item {
                     @include fontFamily('Lato', normal, 22px, 700, white);
                     text-transform: uppercase;
 
@@ -107,7 +107,7 @@ header {
             }
         }
     }
-    .burger {
+    .header_burger {
         display: none;
 
         @include widthMedia(max, 480px) {
@@ -154,7 +154,7 @@ header {
             }
         }
     }
-    .burger.open-menu {
+    .header_burger.open-menu {
         span {
             
             background-color: transparent;
@@ -174,7 +174,7 @@ header {
         }
     }
 }
-.section-coding {
+.coding {
     padding: 290px 115px 200px 115px;
     background: black url(../images/agencia_fon.jpg) no-repeat center top/100% 100%;
     
@@ -211,13 +211,13 @@ header {
         width: 100%;
         padding: 90px 115px 75px 20px;
     }
-    .line-coding {
+    .coding_line {
         display: block;
         width: 72px;
         height: 4px;
         background-color: #3ec6ff;
     }
-    .title {
+    .coding_title {
         @include fontFamily('Lato', normal, 80px, 900, white);
         text-transform: uppercase;
         margin: 5px 0;
@@ -243,7 +243,7 @@ header {
             @include fontFamily('Lato', normal, 14px, 900, white);
         }
     }
-    .btn-study {
+    .coding_btn-study {
         width: 100%;
         width: 172px;
         height: 46px;
@@ -263,11 +263,11 @@ header {
         }
     }
 }
-.section-slogan {
+.slogan {
     width: 100%;
     text-align: center;
 
-    .subtitle-slogan {
+    .slogan_subtitle {
         @include fontFamily('Lato', normal, 36px, 900, black);
         text-transform: uppercase;
         margin-top: 100px;
@@ -281,7 +281,7 @@ header {
             margin-top: 50px;
         }
     }
-    .text-slogan {
+    .slogan_text {
         @include fontFamily('Lato', normal, 22px, 400, #979797);
         margin-top: 40px;
         margin-bottom: 150px;
@@ -296,21 +296,21 @@ header {
         }
     }
 }
-.section-feedback {
+.feedback {
     width: 100%;
     padding: 20px 0;
     background: #6C330B url(../images/canyon.jpg) no-repeat center top/100% 100%;
     position: relative;
     text-align: center;
 
-    .img-user {
+    .feedback_img-user {
         position: absolute;
         left: 0;
         right: 0;
         bottom: 100%;
         margin: -57px auto;
     }
-    .text-rewiew {
+    .feedback_text-rewiew {
         @include fontFamily('Lato', normal, 20px, 400, white);
         padding-top: 112px;
 
@@ -323,13 +323,13 @@ header {
             padding-top: 90px;
         }
     }
-    .text-rewiew::before {
+    .feedback_text-rewiew::before {
         content: "\201C";
     }
-    .text-rewiew::after {
+    .feedback_text-rewiew::after {
         content: "\201D";
     }
-    .username {
+    .feedback_username {
         @include fontFamily('Lato', normal, 20px, 400, white);
         padding: 30px;
 
@@ -341,7 +341,7 @@ header {
         }
     }
 }
-.section-video {
+.video {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -360,7 +360,7 @@ header {
         width: 100%;
         margin: 50px 0;
     }
-    .box-subtitle {
+    .video_info {
         @include widthMedia(max, 1200px) {
             display: flex;
             justify-content: space-around;
@@ -371,13 +371,13 @@ header {
             flex-direction: column;
             align-items: center;
         }
-        .line-video {
+        .video_info_line {
             display: block;
             width: 72px;
             height: 4px;
             background-color: #3ec6ff;
         }
-        .subtitle-video {
+        .video_info_subtitle {
             @include fontFamily('Lato', normal, 36px, 900, black);
             text-transform: uppercase;
             margin: 48px 32px;
@@ -396,11 +396,11 @@ header {
                 text-align: center
             }
         }
-        .text-video {
+        .video_info_text {
             @include fontFamily('Lato', normal, 14px, 400, #979797);
         }
     }
-    .box-video {
+    .video_play {
         max-width: 672px;
         width: 100%;
         height: 0;
@@ -415,7 +415,7 @@ header {
             background: #8F8F8F url(../images/video.jpg) no-repeat center center/cover;
             position: relative;
         }
-        .icon-play {
+        .video_play_icon {
             max-width: 54px;
             width: 100%;
             height: 54px;
@@ -437,7 +437,7 @@ header {
                 opacity: 0.2;
             }
         }
-        .youtube-laptop {
+        .video_play_youtube-laptop {
             display: none;
             width: 100%;
             height: 100%;
@@ -448,7 +448,7 @@ header {
             right: 0;
             margin: auto;
         }
-        .youtube-mobile {
+        .video_play_youtube-mobile {
             display: none;
             width: 100%;
             height: 100%;
@@ -461,7 +461,7 @@ header {
         }
     }
 }
-.section-team {
+.team {
     width: 100%;
     padding: 0 115px;
     @include widthMedia(max, 1400px) {
@@ -499,10 +499,10 @@ header {
         width: 100%;
         padding: 0;
     }
-    .description-team {
+    .team_description {
         text-align: center;
 
-        .subtitle-team {
+        .team_description_subtitle {
             @include fontFamily('Lato', normal, 36px, 900, black);
             text-transform: uppercase;
             margin-top: 40px;
@@ -515,7 +515,7 @@ header {
                 @include fontFamily('Lato', normal, 25px, 900, black);
             }
         }
-        .text-team {
+        .team_description_text {
             @include widthMedia(max, 480px) {
                 @include fontFamily('Lato', normal, 14px, 400, #979797);
             }
@@ -524,7 +524,7 @@ header {
             }
         }
     }
-    .gallery-team {
+    .team_gallery {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
@@ -564,7 +564,7 @@ header {
         }
     }
 }
-.section-location {
+.location {
     width: 100%;
     height: 0;
     padding-bottom: 37%;
@@ -586,7 +586,7 @@ header {
         width: 100%;
         margin-top: 10px;
     }
-   .img-map {
+   .location_img-map {
         position: absolute;
         top: 0;
         left: 0;
@@ -594,7 +594,7 @@ header {
         height: 100%;
         object-fit: cover;
    }
-   .pointer {
+   .location_pointer {
         max-width: 20px;
         width: 100%;
         max-height: 20px;
@@ -639,7 +639,7 @@ header {
             bottom: 42%;  
         }
     }       
-    .box-address {
+    .location_address {
         max-width: 225px;
         width: 100%;
         max-height: 46px;
@@ -689,7 +689,7 @@ header {
             font-size: 9px;
         }
     }
-    .box-point {
+    .location_point {
         max-width: 34px;
         width: 100%;
         max-height: 34px;
@@ -717,7 +717,7 @@ header {
             height: 100%;
         }
     }
-    .box-dot {
+    .location_dot {
         max-width: 20px;
         width: 100%;
         max-height: 20px;
@@ -748,10 +748,10 @@ header {
         }
     }
 }
-.section-form {
+.form {
     text-align: center;
 
-    .subtitle-form {
+    .form_subtitle {
         @include fontFamily('Lato', normal, 36px, 900, black);
         text-transform: uppercase;
         margin-top: 76px;
@@ -882,11 +882,11 @@ footer {
         width: 100%;
         height: 60px;
     }
-    nav ul {
+    .footer_nav ul {
         display: flex;
         align-items: center;
 
-        a {
+        .link {
             @include fontFamily('Lato', normal, 22px, 700, white);
             text-transform: uppercase;
             margin-right: 40px;
@@ -918,11 +918,11 @@ footer {
             }
         }
     }
-    .messengers ul {
+    .footer_messengers ul {
         display: flex;
         align-items: center;
 
-        a {
+        .link {
             margin-left: 40px;
 
             @include widthMedia(max, 768px) {
@@ -934,7 +934,7 @@ footer {
             @include widthMedia(max, 480px) {
                 margin-left: 5px;
             }
-            .path {
+            .icon {
                 &:link {
                     color: white;
                 }
