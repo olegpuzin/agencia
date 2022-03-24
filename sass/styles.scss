@@ -49,7 +49,7 @@ header {
         top: 35px;
     }
     .header_nav {
-        @include widthMedia(max, 480px) {
+        @include widthMedia(max, 600px) {
             display: block;
             position: absolute;
             top: -300%;
@@ -62,7 +62,7 @@ header {
             display: flex;
             align-items: center;
 
-            @include widthMedia(max, 480px) {
+            @include widthMedia(max, 600px) {
                 display: block;
                 padding-top: 10px;
             }
@@ -73,7 +73,7 @@ header {
                 @include widthMedia(max, 768px) {
                     margin-left: 20px
                 }
-                @include widthMedia(max, 480px) {
+                @include widthMedia(max, 600px) {
                     margin: 30px 0 30px 10px;
                     font-size: 16px;
                 }
@@ -110,7 +110,7 @@ header {
     .header_burger {
         display: none;
 
-        @include widthMedia(max, 480px) {
+        @include widthMedia(max, 600px) {
         display: block;
         width: 35px;
         height: 28px;
@@ -886,7 +886,7 @@ footer {
         display: flex;
         align-items: center;
 
-        .link {
+        .footer_nav_link {
             @include fontFamily('Lato', normal, 22px, 700, white);
             text-transform: uppercase;
             margin-right: 40px;
