@@ -14,4 +14,12 @@ $(document).ready(function(){
         $('.header_burger').toggleClass('open-menu');
         $('.header_nav').toggleClass('open_nav');
     });
+    $(".header_menu_item").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
 });
